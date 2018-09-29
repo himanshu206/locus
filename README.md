@@ -20,7 +20,7 @@ Only font awesome to use search icon in the search box
 
      `git clone https://github.com/himanshu206/locus.git`
      
-3. After successfull cloning the project, go to folder `locus` and run command in terminal
+3. After successfull cloning the project, go to cloned folder `locus` and run command in terminal
 
    `npm install`
    
@@ -37,10 +37,11 @@ Only font awesome to use search icon in the search box
 2. `cd locus-repo` -> Go inside locus-repo folder
 3. `git init` -> To initialize git in your folder
 4. `git clone https://github.com/himanshu206/locus.git` -> To clone this repo in your local folder
-5. `npm install` -> To load dependencies via node package manager
-6. `grunt` -> to build distributed package
-7. `cd dist` -> Go inside dist folder
-8. `live-server` -> To open built project in your browser
+5. `cd locus` -> To go inside the cloned repo folder
+6. `npm install` -> To load dependencies via node package manager
+7. `grunt` -> to build distributed package
+8. `cd dist` -> Go inside dist folder
+9. `live-server` -> To open built project in your browser
 
 # Screenshots of working project:
 
