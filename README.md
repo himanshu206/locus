@@ -12,27 +12,8 @@ Html, CSS, JavaScript, AngularJS
 Only font awesome to use search icon in the search box
 
 # How to use this project
-1. Initialize git in your folder where you want to clone this repository.
+Run following commands in terminal to run the project in your machine:
 
-    `git init`
-    
-2. Clone the repository by running the command:
-
-     `git clone https://github.com/himanshu206/locus.git`
-     
-3. After successfull cloning the project, go to cloned folder `locus` and run command in terminal
-
-   `npm install`
-   
-4. After loading dependencies via node package manager, build the project by runnning command:
-
-    `grunt`
-    
-5. Then, go to dist folder and run command:
-
-      `live-server`
-      
-# In short run commands in terminal in this sequence:
 1. `mkdir locus-repo` -> To create folder locus-repo in your machine
 2. `cd locus-repo` -> Go inside locus-repo folder
 3. `git init` -> To initialize git in your folder
