@@ -1,0 +1,15 @@
+<div class="user-card">
+	<div class="user-header">
+		<h3 ng-bind="user.name" class="user-name"></h3>
+		<span ng-bind="'[ ' + user.id + ' ]'" class="user-id"></span>
+	</div>
+
+	<div class="clear-float"></div>
+
+	<div class="user-items">
+		<span ng-repeat="item in user.items" ng-bind="item"></span>
+	</div>
+	<div class="user-address">
+		<span ng-bind="user.address + ', '"></span> <span ng-bind="user.pinCode"></span>
+	</div>
+</div>

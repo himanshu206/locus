@@ -1,0 +1,55 @@
+*:focus {
+	outline: 0;
+}
+
+.container {
+	width: 400px;
+	margin: 0 auto;
+	padding: 12px 30px;
+}
+
+.clear-float {
+	clear: both;
+}
+
+.search-results {
+	margin: 80px auto 40px;
+}
+
+.search-results > div {
+	text-align: center;
+}
+
+.search-results ul {
+	padding: 0;
+}
+
+.search-results li {
+	list-style-type: none;
+}
+
+.search-results > div span:first-child {
+	font-weight: 100;
+	font-size: 22px;
+    text-decoration: underline;
+    color: gray;
+}
+
+.search-results > div span:last-child {
+	font-size: 20px;
+    color: coral;
+}
+
+.search-results .search-results-list li {
+	margin-top: 4px;
+	pointer-events: none;
+}
+
+.active-search-item .user-card {
+	background-color: #fdfdfd;
+	color: dimgray;
+}
+
+.active-search-item .user-card .user-items span {
+	border-color: dimgray;
+}

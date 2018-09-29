@@ -1,0 +1,27 @@
+<div class="search-box">
+	<div class="search-box-input">
+		<i class="fas fa-search"></i>
+		<input type="text"
+		       placeholder="{{ placeholder }}"
+		       ng-model="searchQuery"
+		       ng-change="handleSearchQueryChange()"
+		       ng-keyup="handleKeyUp($event)">
+	</div>
+
+	<div class="clear-float"></div>
+
+	<ul class="search-list" id="search-list">
+		<li ng-repeat="data in filteredData track by data.id"
+		    id="{{ data.id }}"
+		    ng-if="showDropdownList"
+			ng-mouseover="syncKeypadNavigationWithMouseHover($event)"
+		    ng-class="{'{{ activeItemClass }}': $index == currentNavigationIndex}"
+		    ng-click="loadSearchedResults(data)">
+			<user-card user="data"></user-card>
+		</li>
+
+		<li ng-if="searchQuery && filteredData.length == 0" class="no-search-results">
+			{{ noResultsFoundMessage }}
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="locus">
+	<head>
+		<meta charset="UTF-8">
+		<title>Search Box</title>
+
+		<link rel="shortcut icon" href="assets/favicon.ico">
+
+		<link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+
+		<!-- build:css css/locus.min.css -->
+		<link href="assets/css/user.css" rel="stylesheet">
+		<link href="assets/css/search-box.css" rel="stylesheet">
+		<link href="assets/css/app.css" rel="stylesheet">
+		<!-- /build -->
+	</head>
+
+	<body ng-controller="AppMainCtrl">
+		<div id="container" class="container">
+			<search-box data="users"
+			            placeholder="Search users by id, name, address..."
+			            search-fields="searchFields"
+			            no-results-found-message="No users found..."
+			            active-item-class="active-search-item"
+			            searched-results="searchedResults">
+			</search-box>
+
+			<div class="search-results">
+				<div>
+					<span>Searched Results</span>
+					<span>[ {{ searchedResults.length }} ]</span>
+				</div>
+				<ul class="search-results-list">
+					<li ng-repeat="result in searchedResults">
+						<user-card user="result"></user-card>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- build:js js/vendor.min.js -->
+		<script src="node_modules/angular/angular.min.js" type="text/javascript"></script>
+		<!-- /build -->
+
+		<!-- build:js js/locus.min.js -->
+		<script src="src/search-box/search-box-module.js" type="text/javascript"></script>
+		<script src="src/search-box/services/search-box-service.js" type="text/javascript"></script>
+		<script src="src/search-box/directives/search-box-directive.js" type="text/javascript"></script>
+
+		<script src="src/user/user-module.js" type="text/javascript"></script>
+		<script src="src/user/models/user-model.js" type="text/javascript"></script>
+		<script src="src/user/services/user-service.js" type="text/javascript"></script>
+		<script src="src/user/directives/user-card-directive.js" type="text/javascript"></script>
+
+		<script src="src/app-module.js" type="text/javascript"></script>
+		<script src="src/app.js" type="text/javascript"></script>
+		<!-- /build -->
+
+	</body>
+</html>
